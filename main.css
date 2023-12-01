@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:wght@300&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #885053;
+}
+
+.navbar{
+    margin-top:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ol li{
+    list-style: none;
+    display: inline; /*links are horizontal*/
+    margin: 0px 30px; /*affects let and right margins*/
+}
+
+ol li a{
+    color:#140a00;
+    text-decoration: none;
+    transition: 0.4s;
+    letter-spacing: 0.09em ;
+    padding-bottom: 3px;
+}
+
+a:hover{
+    text-transform: uppercase;
+    color:#d6d6d6;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+@media only screen and (max-width:400px){
+    .navbar{
+        margin-top: 150px;
+    }
+    ol li{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:20px 0px;
+    }
+}
